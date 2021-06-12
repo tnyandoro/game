@@ -1,0 +1,27 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "An RPG game created in vanilla JavaScript using classes and constructors.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnyandoro/game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tnyandoro/game/issues"
+  },
+  "homepage": "https://github.com/tnyandoro/game#readme",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
