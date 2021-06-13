@@ -1,3 +1,5 @@
+// Lets declare the player without set values globally
+
 let player;
 
 function Player (classType, health, mana, agility, speed,) {

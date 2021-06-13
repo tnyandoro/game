@@ -1,3 +1,5 @@
+let enemey;
+
 function Enemy (enemyType, health, mana, agility, speed,) {
   this.classType = enemyType;
   this.health = health;
