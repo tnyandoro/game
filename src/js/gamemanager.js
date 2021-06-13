@@ -1,3 +1,5 @@
 let GameManager = {
-  
+  setGameStart: function() {
+    
+  }
 }
