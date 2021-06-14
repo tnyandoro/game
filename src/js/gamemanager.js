@@ -21,8 +21,8 @@ const GameManager = {
         player = new Player(classType, 200, 0, 50, 200, 100);
         break;
     }
-    let getInterface = document.querySelector('.interface');
-    getInterface.innerHTML = '<img src="img/"';
+    const getInterface = document.querySelector('.interface');
+    getInterface.innerHTML = `<img src="img/${classType.toLowerCase()}.png" />`;
   },
 
   setPreFight() {
