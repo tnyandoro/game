@@ -29,7 +29,9 @@ GameManager = {
     getInterface.innerHTML = `<img src="img/${classType.toLowerCase()}.png" class="img-avatar"/><div><h3>' + classType \n\n        \n    + </h3><p>Health: ' + player.health + '</p><p>Mana: ' + player.mana + '</p><p>Strength: ' + player.strength + '</p>\n        \n    <p>Agility: ' + player.agility + '</p><p>Speed: ' + player.speed + '</p></div'`;
   },
 
-  setPreFight: function() {
-
-  }
-}
+  setPreFight() {
+    const getHeader = document.querySelector('.header');
+    let getActions = document.querySelector('.actions');
+    let getArena = document.querySelector('.arena');
+  },
+};
