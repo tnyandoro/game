@@ -34,7 +34,7 @@ GameManager = {
     let getActions = document.querySelector('.actions');
     let getArena = document.querySelector('.arena');
     getHeader.innerHTML = '<p>Task: Find an enemy!</p>';
-    getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="GameManager"></a>';
+    getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="GameManager.setFight()">Search for an oponent</a>';
     getArena.innerHTML = '';
   },
 };
