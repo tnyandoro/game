@@ -1,8 +1,8 @@
 // Lets declare the player without set values globally
 
-let Player;
+let player;
 
-export default function Player (classType, health, mana, agility, speed,) {
+export default function Player(classType, health, mana, strength, agility, speed) {
   this.classType = classType;
   this.health = health;
   this.mana = mana;
@@ -10,4 +10,3 @@ export default function Player (classType, health, mana, agility, speed,) {
   this.agility = agility;
   this.speed = speed;
 }
-
