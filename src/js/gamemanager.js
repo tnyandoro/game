@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 const GameManager = {
   // set three method inside the game manager method
   setGameStart(classType) {
@@ -18,8 +19,6 @@ const GameManager = {
         break;
       case 'Hunter':
         player = new Player(classType, 200, 0, 50, 200, 100);
-        break;
-      default:
         break;
     }
   },
