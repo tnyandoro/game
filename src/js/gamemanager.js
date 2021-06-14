@@ -22,7 +22,7 @@ const GameManager = {
         break;
     }
     let getInterface = document.querySelector('.interface');
-    getInterface.innerHTML = '';
+    getInterface.innerHTML = '<img src="img/"';
   },
 
   setPreFight() {
