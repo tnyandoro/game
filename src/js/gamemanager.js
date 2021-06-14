@@ -1,5 +1,9 @@
+import Enemy from './Enemy';
+import Player from './Player';
 /* eslint-disable default-case */
-const GameManager = {
+let GameManager;
+
+GameManager = {
   // set three method inside the game manager method
   setGameStart(classType) {
     this.resetPlayer(classType);
@@ -22,11 +26,10 @@ const GameManager = {
         break;
     }
     const getInterface = document.querySelector('.interface');
-    getInterface.innerHTML = `<img src="img/${classType.toLowerCase()}.png" class="img-avatar"/><div><h3>' + classType \n\n        
-    + </h3><p>Health: ' + player.health + '</p><p>Mana: ' + player.mana + '</p><p>Strength: ' + player.strength + '</p>\n        
-    <p>Agility: ' + player.agility + '</p><p>Speed: ' + player.speed + '</p></div'`;
+    getInterface.innerHTML = `<img src="img/${classType.toLowerCase()}.png" class="img-avatar"/><div><h3>' + classType \n\n        \n    + </h3><p>Health: ' + player.health + '</p><p>Mana: ' + player.mana + '</p><p>Strength: ' + player.strength + '</p>\n        \n    <p>Agility: ' + player.agility + '</p><p>Speed: ' + player.speed + '</p></div'`;
   },
 
-  setPreFight() {
-  },
-};
+  setPreFight: function() {
+
+  }
+}
