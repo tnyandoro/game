@@ -10,3 +10,21 @@ function Player(classType, health, mana, strength, agility, speed) {
   this.agility = agility;
   this.speed = speed;
 }
+
+const PlayerMoves = {
+  calcAttack() {
+    // who attacks first?
+
+    const getPlayerSpeed = player.speed;
+    const getEnemySpeed = enemy.speed;
+  },
+  // Player attacks  
+  let playAttack = function () {
+    let calcBaseDamage;
+    if (player.mana > 0) {
+
+    } else {
+      calcBaseDamage = player.strength * player.mana
+    }
+  }
+};
