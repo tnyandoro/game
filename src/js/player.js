@@ -19,12 +19,14 @@ const PlayerMoves = {
     const getEnemySpeed = enemy.speed;
   },
   // Player attacks  
-  let playAttack = function () {
+  let playerAttack = function () {
     let calcBaseDamage;
     if (player.mana > 0) {
-
+      calcBaseDamage = player.strength * player.mana / 1000;
     } else {
-      calcBaseDamage = player.strength * player.mana
+      calcBaseDamage = player.strength * player.agility / 1000;
     }
+    let offsetDamage = Math.floor(Math.random() * Math.floor(10));
+    let calcOutputDamage = calcBaseDamage + offsetDamage;
   }
 };
