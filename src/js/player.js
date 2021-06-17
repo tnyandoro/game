@@ -28,5 +28,7 @@ const PlayerMoves = {
     }
     let offsetDamage = Math.floor(Math.random() * Math.floor(10));
     let calcOutputDamage = calcBaseDamage + offsetDamage;
+    // Number of hits 
+    let numberOfHits = Math.floor(Math.random() * Math.floor(player.agility / 10) / 2) + 1;
   }
 };
