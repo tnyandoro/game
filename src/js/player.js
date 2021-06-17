@@ -1,5 +1,3 @@
-// Lets declare the player without set values globally
-
 let player;
 
 function Player(classType, health, mana, strength, agility, speed) {
@@ -48,5 +46,24 @@ const PlayerMoves = {
     let attackValues = [calcOutputDamage, numberOfHits ];
     return attackValues;
   }
-    let getPlayerHealth = document.querySelector(".health-player");
+
+  // Get player enemy health to change later
+    let getPlayerHealth = document.querySelector(".health-player"),
+    let getEnemyHealth = document.querySelector(".health-enemy"),
+    // Initiate attacks!  
+    if (getPlayerSpeed >= getEnemySpeed) {
+      let playerAttackValues = playerAttack();
+      let totalDamage = playerAttackValues[0] * playerAttackValues[1];
+      enemy.health = enemy.health - totalDamage;
+      alert("You hit " + playerAttackValues[0] + " damage " + 
+      playerAttackValues[1] + " times ");
+      if (enemy.health <+ 0) {
+        alert("You Win! Refresh browser to play again.");
+        getPlayerHealth.innerHTML = 'Health: ' + player.health;
+        getPlayerHealth.innerHTML = 'Health: 0';        
+      } else {
+        getPlayerHealth.innerHTML = 'Health: ' + player.health;
+        // Enemy attacks
+      }
+    }
 };
