@@ -22,7 +22,7 @@ const GameManager = {
         break;
     }
     const getInterface = document.querySelector('.interface');
-    getInterface.innerHTML = `<img src="img/${classType.toLowerCase()}.png" class="img-avatar"><div><h3>${classType}</h3><p>Health: ${player.health}</p><p>Mana: ${player.mana}</p><p>Strength: ${player.strength}</p><p>Agility:${player.agility}</p><p>Speed: ${player.speed}</p></div>`;
+    getInterface.innerHTML = `<img src="img/${classType.toLowerCase()}.png" class="img-avatar"><div><h3>${classType}</h3><p class=".health-player">Health: ${player.health}</p><p>Mana: ${player.mana}</p><p>Strength: ${player.strength}</p><p>Agility:${player.agility}</p><p>Speed: ${player.speed}</p></div>`;
   },
 
   setPreFight() {

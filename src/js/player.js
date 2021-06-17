@@ -47,4 +47,6 @@ const PlayerMoves = {
     let numberOfHits = Math.floor(Math.random() * Math.floor(enemy.agility / 10) / 2) + 1;
     let attackValues = [calcOutputDamage, numberOfHits ];
     return attackValues;
+  }
+    let getPlayerHealth = document.querySelector(".health-player");
 };
